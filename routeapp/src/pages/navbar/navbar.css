@@ -1,0 +1,57 @@
+.container {
+  background-color: rgb(92, 143, 143);
+  height: 100px;
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2.2rem;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  justify-content: space-between;
+}
+.nav-logo {
+  color: #ebe7e7;
+  text-decoration: none;
+}
+.nav-links {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+.nav-link {
+  color: #ececec;
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: #ae2727;
+  text-decoration: underline;
+}
+.nav-icons {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .nav-icons {
+    display: flex;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    top: 80px;
+    left: -117%;
+    position: absolute;
+    background-color: rgb(92, 143, 143);
+    transition: 0.5s;
+  }
+  .nav-items {
+    border-top: 3px solid #fff;
+    padding: 10px;
+  }
+  .nav-links.active {
+    left: -7%;
+  }
+}
